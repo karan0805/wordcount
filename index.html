@@ -54,14 +54,14 @@
                         
                         
                         
-  
-    <script> 
+  <script> 
   
         function myFunction() { 
             var x =  
                 document.getElementById("myText").value; 
-            var bySpace = x.split(" ");
-           var y=x.split(" ").join(""); 
+            var xnew=x.trim();
+            var bySpace = xnew.split(" ");
+            var y=xnew.split(" ").join(""); 
             var myStr="There are "+bySpace.length+ " words and "+y.length+" letters in your input."
            swal("Thank you for your input", myStr, "success");
         } 
